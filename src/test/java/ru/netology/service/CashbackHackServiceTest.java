@@ -12,20 +12,20 @@ public class CashbackHackServiceTest {
     public void shouldReturn100WhenSpend900(){
         int expected = 100;
         int actual = CashbackHackService.remain(900);
-        assertEquals(actual, expected);
+        assertEquals(expected, actual);
     }
 
     @Test
     public void shouldReturn0WhenSpend1000(){
         int expected = 0;
         int actual = CashbackHackService.remain(1000);
-        assertEquals(actual, expected);
+        assertEquals(expected, actual);
     }
 
     @Test
     public void shouldReturn1WhenSpend1999(){
         int expected = 1;
         int actual = CashbackHackService.remain(1999);
-        assertEquals(actual, expected);
+        assertEquals(expected, actual);
     }
 }
